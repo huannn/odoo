@@ -1,0 +1,275 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* innsa_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-06-18 10:46+0000\n"
+"PO-Revision-Date: 2022-06-18 17:50+0700\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Poedit 2.0.4\n"
+"Last-Translator: \n"
+"Language: vi\n"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__acreage
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__acreage
+msgid "Acreage"
+msgstr "Diện tích"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__address
+msgid "Address"
+msgstr "Địa chỉ"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__code
+msgid "Area Code"
+msgstr "Mã khu vực"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__name
+msgid "Area Name"
+msgstr "Tên khu vực"
+
+#. module: innsa_base
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_view_form
+msgid "Attach a file"
+msgstr "Đính kèm tệp tin"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__code
+msgid "Code"
+msgstr "Mã"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__create_uid
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__create_uid
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__create_uid
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__create_date
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__create_date
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__create_date
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__display_name
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__display_name
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__display_name
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__attachment_ids
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_view_form
+msgid "Documents"
+msgstr "Tài liệu"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__farm_id
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__farm_id
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__farm_id
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_view_form
+msgid "Farm"
+msgstr "Trang trại"
+
+#. module: innsa_base
+#: model:ir.actions.act_window,name:innsa_base.innsa_farm_area_action
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__area_id
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_area_view_form
+msgid "Farm Area"
+msgstr "Khu vực trồng trọt"
+
+#. module: innsa_base
+#: model:ir.actions.act_window,name:innsa_base.innsa_farm_slot_action
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_slot_view_form
+msgid "Farm Slot"
+msgstr "Lô/Thửa"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__google_map_link
+msgid "Google Map Link"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__id
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__id
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__id
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__id
+msgid "ID"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.module.category,description:innsa_base.innsa_category
+msgid "Innsa Access"
+msgstr ""
+
+#. module: innsa_base
+#: model:res.groups,name:innsa_base.group_innsa_admin
+msgid "Innsa Admin"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.ui.menu,name:innsa_base.innsa_area_root_menu
+msgid "Innsa Area"
+msgstr "Khu vực trồng trọt"
+
+#. module: innsa_base
+#: model:ir.actions.act_window,name:innsa_base.innsa_farm_action
+#: model:ir.ui.menu,name:innsa_base.innsa_farm_menu
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_view_tree
+msgid "Innsa Farm"
+msgstr "Trang trại"
+
+#. module: innsa_base
+#: model:ir.ui.menu,name:innsa_base.innsa_farm_area_menu
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_area_view_tree
+msgid "Innsa Farm Area"
+msgstr "Khu vực trồng trọt"
+
+#. module: innsa_base
+#: model:ir.ui.menu,name:innsa_base.innsa_farm_slot_menu
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_slot_view_tree
+msgid "Innsa Farm Slot"
+msgstr "Lô/Thửa"
+
+#. module: innsa_base
+#: model:ir.ui.menu,name:innsa_base.innsa_base_root_menu
+msgid "Innsa System"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.module.category,name:innsa_base.innsa_category
+msgid "Innsa."
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm____last_update
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area____last_update
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot____last_update
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__write_uid
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__write_uid
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__write_uid
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__write_date
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__write_date
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__write_date
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__manager_id
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__manager_id
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__manager_id
+msgid "Manager"
+msgstr "Người quản lý"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__map_image
+msgid "Map Image"
+msgstr "Bản đồ"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__name
+msgid "Name"
+msgstr "Tên"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_area__notes
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__notes
+msgid "Notes"
+msgstr "Ghi chú"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__phone_number
+msgid "Phone Number"
+msgstr "Số điện thoại"
+
+#. module: innsa_base
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_view_search
+msgid "Search Farm"
+msgstr "Tìm kiếm trang trại"
+
+#. module: innsa_base
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_area_view_search
+msgid "Search Farm Area"
+msgstr "Tìm kiếm khu vực"
+
+#. module: innsa_base
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_slot_view_search
+msgid "Search Farm Slot"
+msgstr "Tìm kiếm lô/thửa"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__code
+msgid "Slot Code"
+msgstr "Mã lô"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_slot__name
+msgid "Slot Name"
+msgstr "Tên lô"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__code
+msgid "Zone Code"
+msgstr "Mã khu vực"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__function
+msgid "Zone Function"
+msgstr "Chức năng"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm_zone__name
+msgid "Zone Name"
+msgstr "Tên khu vực"
+
+#. module: innsa_base
+#: model:ir.model.fields,field_description:innsa_base.field_innsa_farm__zone_ids
+#: model_terms:ir.ui.view,arch_db:innsa_base.innsa_farm_view_form
+msgid "Zone Notes"
+msgstr "Ghi chú"
+
+#. module: innsa_base
+#: model:ir.model,name:innsa_base.model_innsa_farm
+msgid "innsa.farm"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model,name:innsa_base.model_innsa_farm_area
+msgid "innsa.farm.area"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model,name:innsa_base.model_innsa_farm_slot
+msgid "innsa.farm.slot"
+msgstr ""
+
+#. module: innsa_base
+#: model:ir.model,name:innsa_base.model_innsa_farm_zone
+msgid "innsa.farm.zone"
+msgstr ""

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- FARM -->
+    <record id="innsa_farm_view_tree" model="ir.ui.view">
+        <field name="name">innsa.farm.tree</field>
+        <field name="model">innsa.farm</field>
+        <field name="arch" type="xml">
+            <tree string="Innsa Farm">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="address"/>
+                <field name="phone_number"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="innsa_farm_view_form" model="ir.ui.view">
+        <field name="name">innsa.farm.form</field>
+        <field name="model">innsa.farm</field>
+        <field name="arch" type="xml">
+            <form string="Farm">
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="name"/>
+                            <field name="phone_number"/>
+                            <field name="address"/>
+                        </group>
+                        <group>
+                            <field name="code"/>
+                            <field name="google_map_link"/>
+                            <field name="manager_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="map_image" widget="image"/>
+                    </group>
+                    <group>
+                        <field name="zone_ids" mode="tree" options="{'reload_whole_on_button': true}">
+                            <tree string="Zone Notes" editable="bottom" create="1" delete="1" multi_edit="1">
+                                <field name="code"/>
+                                <field name="name"/>
+                                <field name="function"/>
+                            </tree>
+                        </field>
+                    </group>
+                    <group string="Documents">
+                        <field name="attachment_ids" widget="many2many_binary" string="Attach a file" nolabel="1" colspan="2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="innsa_farm_view_search" model="ir.ui.view">
+        <field name="name">innsa.farm.search</field>
+        <field name="model">innsa.farm</field>
+        <field name="arch" type="xml">
+            <search string="Search Farm">
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="innsa_farm_action" model="ir.actions.act_window">
+        <field name="name">Innsa Farm</field>
+        <field name="res_model">innsa.farm</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- FARM AREA PLANT -->
+    <record id="innsa_farm_area_view_tree" model="ir.ui.view">
+        <field name="name">innsa.farm.area.tree</field>
+        <field name="model">innsa.farm.area</field>
+        <field name="arch" type="xml">
+            <tree string="Innsa Farm Area">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="farm_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="innsa_farm_area_view_form" model="ir.ui.view">
+        <field name="name">innsa.farm.area.form</field>
+        <field name="model">innsa.farm.area</field>
+        <field name="arch" type="xml">
+            <form string="Farm Area">
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="name"/>
+                            <field name="farm_id"/>
+                            <field name="acreage"/>
+                        </group>
+                        <group>
+                            <field name="code"/>
+                            <field name="manager_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="innsa_farm_area_view_search" model="ir.ui.view">
+        <field name="name">innsa.farm.area.search</field>
+        <field name="model">innsa.farm.area</field>
+        <field name="arch" type="xml">
+            <search string="Search Farm Area">
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="innsa_farm_area_action" model="ir.actions.act_window">
+        <field name="name">Farm Area</field>
+        <field name="res_model">innsa.farm.area</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- FARM SLOT -->
+        <record id="innsa_farm_slot_view_tree" model="ir.ui.view">
+        <field name="name">innsa.farm.slot.tree</field>
+        <field name="model">innsa.farm.slot</field>
+        <field name="arch" type="xml">
+            <tree string="Innsa Farm Slot">
+                <field name="name"/>
+                <field name="code"/>
+                <field name="farm_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="innsa_farm_slot_view_form" model="ir.ui.view">
+        <field name="name">innsa.farm.slot.form</field>
+        <field name="model">innsa.farm.slot</field>
+        <field name="arch" type="xml">
+            <form string="Farm Slot">
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="name"/>
+                            <field name="farm_id"/>
+                            <field name="acreage"/>
+                        </group>
+                        <group>
+                            <field name="code"/>
+                            <field name="area_id"/>
+                            <field name="manager_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="innsa_farm_slot_view_search" model="ir.ui.view">
+        <field name="name">innsa.farm.slot.search</field>
+        <field name="model">innsa.farm.slot</field>
+        <field name="arch" type="xml">
+            <search string="Search Farm Slot">
+                <field name="name"/>
+                <field name="code"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="innsa_farm_slot_action" model="ir.actions.act_window">
+        <field name="name">Farm Slot</field>
+        <field name="res_model">innsa.farm.slot</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- MENU -->
+    <menuitem id="innsa_base_root_menu"
+              name="Innsa System"
+              sequence="50"/>
+
+    <menuitem id="innsa_area_root_menu"
+              name="Innsa Area"
+              parent="innsa_base_root_menu"
+              sequence="10"/>
+
+    <menuitem id="innsa_farm_menu" name="Innsa Farm" parent="innsa_area_root_menu"
+        action="innsa_farm_action" sequence="10"/>
+    <menuitem id="innsa_farm_area_menu" name="Innsa Farm Area" parent="innsa_area_root_menu"
+        action="innsa_farm_area_action" sequence="20"/>
+    <menuitem id="innsa_farm_slot_menu" name="Innsa Farm Slot" parent="innsa_area_root_menu"
+        action="innsa_farm_slot_action" sequence="30"/>
+</odoo>
