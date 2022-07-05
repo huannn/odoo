@@ -46,3 +46,16 @@ class InnsaFarmSlot(models.Model):
                               domain="[('farm_id', '=', farm_id)]")
     manager_id = fields.Many2one('hr.employee', 'Manager')
     notes = fields.Text('Notes')
+
+class InnsaFarmExperimentHistory(models.Model):
+    _name = 'innsa.farm.experiment_history'
+
+    name = fields.Char('Name', required=True)
+    experiment_date = fields.Date('Experiment Date')
+    experiment_organization = fields.Char('Experiment Organization')
+    farm_id = fields.Many2one('innsa.farm', 'Farm')
+    area_id = fields.Many2one('innsa.farm.area', 'Farm Area',
+                              domain="[('farm_id', '=', farm_id)]")
+    manager_id = fields.Many2one('hr.employee', 'Manager')
+    notes = fields.Text('Notes')
+    attachment_ids = fields.Many2many('ir.attachment', string='Documents')

@@ -18,6 +18,7 @@
         'security/innsa_security.xml',
         'security/ir.model.access.csv',
         'views/innsa_farm_views.xml',
+        'views/innsa_planting_views.xml',
     ],
     'demo': [
     ],

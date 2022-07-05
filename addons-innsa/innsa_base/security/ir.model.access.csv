@@ -3,3 +3,5 @@ access_innsa_farm_admin,innsa.farm.admin,model_innsa_farm,innsa_base.group_innsa
 access_innsa_farm_zone_admin,innsa.farm.zone.admin,model_innsa_farm_zone,innsa_base.group_innsa_admin,1,1,1,1
 access_innsa_farm_area_admin,innsa.farm.area.admin,model_innsa_farm_area,innsa_base.group_innsa_admin,1,1,1,1
 access_innsa_farm_slot_admin,innsa.farm.slot.admin,model_innsa_farm_slot,innsa_base.group_innsa_admin,1,1,1,1
+access_innsa_farm_experiment_history_admin,innsa.farm.experiment_history.admin,model_innsa_farm_experiment_history,innsa_base.group_innsa_admin,1,1,1,1
+access_innsa_farm_planting_new_admin,innsa.farm.planting_new.admin,model_innsa_farm_planting_new,innsa_base.group_innsa_admin,1,1,1,1

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- FARM EXPERIMENT HISTORY -->
+
+    <record id="innsa_farm_planting_new_view_tree" model="ir.ui.view">
+        <field name="name">innsa.farm.planting_new.tree</field>
+        <field name="model">innsa.farm.planting.new</field>
+        <field name="arch" type="xml">
+            <tree string="Innsa Farm Planting New">
+                <field name="farm_code"/>
+                <field name="farm_name"/>
+                <field name="area_code"/>
+                <field name="area_name"/>
+                <field name="slot_code"/>
+                <field name="slot_name"/>
+                <field name="purpose"/>
+                <field name="tree_type"/>
+                <field name="quantity"/>
+                <field name="start_time"/>
+                <field name="manager_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="innsa_farm_planting_new_view_form" model="ir.ui.view">
+        <field name="name">innsa.farm.planting_new.form</field>
+        <field name="model">innsa.farm.planting.new</field>
+        <field name="arch" type="xml">
+            <form string="Farm Planting New">
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="farm_id"/>
+                            <field name="area_id"/>
+                            <field name="slot_id"/>
+                            <field name="manager_id"/>
+                        </group>
+                        <group>
+                            <field name="purpose"/>
+                            <field name="tree_type"/>
+                            <field name="quantity"/>
+                            <field name="start_time"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="innsa_farm_planting_new_view_search" model="ir.ui.view">
+        <field name="name">innsa.farm.planting_new.search</field>
+        <field name="model">innsa.farm.planting.new</field>
+        <field name="arch" type="xml">
+            <search string="Search Farm Planting New">
+                <field name="farm_id"/>
+                <field name="area_id"/>
+                <field name="slot_id"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="innsa_farm_planting_new_action" model="ir.actions.act_window">
+        <field name="name">Farm Planting New</field>
+        <field name="res_model">innsa.farm.planting.new</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="innsa_planting_menu"
+              name="Innsa Planting"
+              parent="innsa_base_root_menu"
+              sequence="20"/>
+
+    <menuitem id="innsa_farm_planting_new_menu" name="Innsa Planting New" parent="innsa_planting_menu"
+        action="innsa_farm_planting_new_action" sequence="10"/>
+</odoo>

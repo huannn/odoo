@@ -126,7 +126,7 @@
     </record>
 
     <!-- FARM SLOT -->
-        <record id="innsa_farm_slot_view_tree" model="ir.ui.view">
+    <record id="innsa_farm_slot_view_tree" model="ir.ui.view">
         <field name="name">innsa.farm.slot.tree</field>
         <field name="model">innsa.farm.slot</field>
         <field name="arch" type="xml">
@@ -181,6 +181,66 @@
         <field name="view_mode">tree,form</field>
     </record>
 
+    <!-- FARM EXPERIMENT HISTORY -->
+
+    <record id="innsa_farm_experiment_history_view_tree" model="ir.ui.view">
+        <field name="name">innsa.farm.experiment_history.tree</field>
+        <field name="model">innsa.farm.experiment_history</field>
+        <field name="arch" type="xml">
+            <tree string="Innsa Farm Experiment History">
+                <field name="name"/>
+                <field name="experiment_date"/>
+                <field name="experiment_organization"/>
+                <field name="area_id"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="innsa_farm_experiment_history_view_form" model="ir.ui.view">
+        <field name="name">innsa.farm.experiment_history.form</field>
+        <field name="model">innsa.farm.experiment_history</field>
+        <field name="arch" type="xml">
+            <form string="Farm Experiment History">
+                <sheet>
+                    <group col="2">
+                        <group>
+                            <field name="name"/>
+                            <field name="experiment_date"/>
+                            <field name="experiment_organization"/>
+                        </group>
+                        <group>
+                            <field name="farm_id"/>
+                            <field name="area_id"/>
+                            <field name="manager_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                    <group string="Documents">
+                        <field name="attachment_ids" widget="many2many_binary" string="Attach a file" nolabel="1" colspan="2"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="innsa_farm_experiment_history_view_search" model="ir.ui.view">
+        <field name="name">innsa.farm.experiment_history.search</field>
+        <field name="model">innsa.farm.experiment_history</field>
+        <field name="arch" type="xml">
+            <search string="Search Farm Experiment History">
+                <field name="name"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="innsa_farm_experiment_history_action" model="ir.actions.act_window">
+        <field name="name">Farm Experiment History</field>
+        <field name="res_model">innsa.farm.experiment_history</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
     <!-- MENU -->
     <menuitem id="innsa_base_root_menu"
               name="Innsa System"
@@ -197,4 +257,7 @@
         action="innsa_farm_area_action" sequence="20"/>
     <menuitem id="innsa_farm_slot_menu" name="Innsa Farm Slot" parent="innsa_area_root_menu"
         action="innsa_farm_slot_action" sequence="30"/>
+    <menuitem id="innsa_farm_experiment_history_menu" name="Innsa Farm Experiment History" parent="innsa_area_root_menu"
+        action="innsa_farm_experiment_history_action" sequence="40"/>
+
 </odoo>
