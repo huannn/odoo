@@ -1,7 +1,11 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_innsa_activity_admin,innsa.activity.admin,model_innsa_activity,innsa_base.group_innsa_admin,1,1,1,1
+access_innsa_tree_type_admin,innsa.tree.type.admin,model_innsa_tree_type,innsa_base.group_innsa_admin,1,1,1,1
 access_innsa_farm_admin,innsa.farm.admin,model_innsa_farm,innsa_base.group_innsa_admin,1,1,1,1
 access_innsa_farm_zone_admin,innsa.farm.zone.admin,model_innsa_farm_zone,innsa_base.group_innsa_admin,1,1,1,1
 access_innsa_farm_area_admin,innsa.farm.area.admin,model_innsa_farm_area,innsa_base.group_innsa_admin,1,1,1,1
 access_innsa_farm_slot_admin,innsa.farm.slot.admin,model_innsa_farm_slot,innsa_base.group_innsa_admin,1,1,1,1
 access_innsa_farm_experiment_history_admin,innsa.farm.experiment_history.admin,model_innsa_farm_experiment_history,innsa_base.group_innsa_admin,1,1,1,1
-access_innsa_farm_planting_new_admin,innsa.farm.planting_new.admin,model_innsa_farm_planting_new,innsa_base.group_innsa_admin,1,1,1,1
+access_innsa_farm_planting_admin,innsa.farm.planting.admin,model_innsa_farm_planting,innsa_base.group_innsa_admin,1,1,1,1
+access_innsa_farm_activity_admin,innsa.farm.activity.admin,model_innsa_farm_activity,innsa_base.group_innsa_admin,1,1,1,1
+access_innsa_farm_harvest_admin,innsa.farm.harvest.admin,model_innsa_farm_harvest,innsa_base.group_innsa_admin,1,1,1,1

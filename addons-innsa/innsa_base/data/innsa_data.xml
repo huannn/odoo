@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+      <record id="innsa_tree_type_coffee_voi" model="innsa.tree.type">
+          <field name="name">Cafe vối</field>
+      </record>
+      <record id="innsa_tree_type_coffee_mit" model="innsa.tree.type">
+          <field name="name">Cafe mít</field>
+      </record>
+      <record id="innsa_activity_bonphan" model="innsa.activity">
+          <field name="name">Bón phân</field>
+      </record>
+      <record id="innsa_activity_tuoinuoc" model="innsa.activity">
+          <field name="name">Tưới nước</field>
+      </record>
+  </data>
+</odoo>

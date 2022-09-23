@@ -3,3 +3,4 @@
 
 from . import innsa_farm
 from . import innsa_planting
+from . import innsa_category
